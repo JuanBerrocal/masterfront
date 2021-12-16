@@ -1,0 +1,51 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: [first] 288px [last];
+    grid-template-rows:  [first] 175px 50px 250px 40px 60px [last];
+    border: 1px solid gray;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+    padding: 10px;   
+}
+
+.title {
+    font-size: x-large;
+    text-align: left;
+}
+
+.text {
+    padding: 10px;
+    font-size: small;
+    text-align: left;
+    color: gray;
+}
+
+.published {
+    font-size: small;
+    text-align: right;
+}
+
+.date_published {
+    color: yellowgreen;
+}
+
+.moreinfo-button {
+    background-color: yellowgreen;
+    color: white;
+    font-size: medium; 
+    border: 0;
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+}

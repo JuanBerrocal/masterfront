@@ -1,0 +1,38 @@
+
+@mixin setcolors($basecolor) {
+    .base-color {background-color: $basecolor; color: white;}
+    @for $i from 1 through 4 {
+        .darken-#{$i} {background-color: darken($basecolor, $i * 6);}
+    }
+    @for $i from 1 through 4 {
+        .lighten-#{$i} {background-color: lighten($basecolor, $i * 6);}
+    }
+}
+
+@for $j from 1 through 3 {
+    .container-#{$j} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        @if $j == 1 {
+            @include setcolors(red);
+        } @else if $j == 2 {
+            @include setcolors(blue);
+        } @else {
+            @include setcolors(green);
+        }
+    }
+}
+
+.color-box-text {
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 25px 5px 25px 5px;
+    margin: 5px 5px 5px 5px;
+}
+

@@ -1,0 +1,59 @@
+@import "theme2.scss";
+
+body {
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    margin: 0;
+    text-align: left;
+    padding: 30px;
+}
+
+.genericbox {
+    width: 100px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: $border_radius;
+    padding: 10px 10px 10px 10px;
+    font-family: "Courier New";
+    font-weight: bold;
+}
+
+.basebox {
+    background-color: $base_color;
+
+}
+
+.importantbox {
+    background-color: $important_color;
+}
+
+.warningbox {
+    background-color: $warning_color;
+}
+
+.fontbox {
+    text-align: left;
+    width: 200px;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}
+
+#principal_font {
+    font-family: $principal_font;
+    padding: 5px 5px;
+}
+
+#secondary_font {
+    font-family: $secondary_font;
+    padding: 5px 5px;
+}
+
+.shadowbox {
+    box-shadow: $offset_x $offset_y 10px gray;
+    border: 1px solid gray;
+
+}
