@@ -1,0 +1,11 @@
+$back-color: beige;
+$color: gray;
+
+.component-style {
+    background-color: $back-color;
+    color: $color;
+    padding: 20px;
+    margin: 0;
+    border: 0;
+    width: 100%;
+}

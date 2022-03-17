@@ -1,0 +1,29 @@
+
+$hello-back-color: gray;
+$hello-color: white;
+
+$message-back-color: beige;
+$message-color: gray;
+
+.hello-world {
+    background-color: $hello-back-color;
+    color: $hello-color;
+    width: 100%;
+    padding: 20px 20px;
+    font-size: xx-large;
+    border: 0; 
+    margin: 0;
+}
+
+.message-class {
+    background-color: $message-back-color;
+    color: $message-color;
+    width: 100%;
+    padding: 20px 20px;
+    border: 0; 
+    margin: 0;
+}
+
+img {
+    width: 100px;
+}
