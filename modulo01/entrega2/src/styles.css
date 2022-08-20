@@ -1,0 +1,176 @@
+:root {
+    --lemonColor: #d6d81d;
+}
+
+* {
+    border:0;
+    margin:0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    border: 0;
+}
+
+.toolbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    color: gray;
+}
+
+.toolbar input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.page-title {
+    color: white;
+    background-color: var(--lemonColor);
+    font-size: 2em;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    background-color: olive;
+}
+
+.menu-container {
+    position: sticky;
+    top: 0px;    
+}
+
+.menu-container ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu-container li {
+    background-color: beige;
+    color: gray;
+    border: 1px gray solid;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+
+.menu-title {
+    color: beige;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    background-color: ghostwhite;
+    gap: 20px 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.card {
+    background-color: white;
+    border: solid 2px gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 125px;
+}
+
+.member-name {
+    text-align: center;
+}
+
+.item img {
+    border-radius: 50%;
+}
+
+footer {
+    color: gray;
+    background-color: beige;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .toolbar {
+        display:none;
+    }
+    .menu-title {
+        display:none;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        /*flex: 1 1 auto;*/
+    }
+
+    nav {
+        position: sticky;
+        top: 0px;
+    }
+
+    .menu-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: space-between;
+        padding: 5px 5px 5px 5px;
+        gap: 5px 5px;
+    }
+    .menu-container ul {
+        text-align: center;
+    }
+      
+    .list {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+        gap: 5px 5px;
+        padding: 1px 5px 1px 5px;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        border: 0;
+        width: 90%;
+        height: 100px;
+    }
+    .member-name {
+        text-align: left;
+        padding: 40px 10px;
+    }
+}
