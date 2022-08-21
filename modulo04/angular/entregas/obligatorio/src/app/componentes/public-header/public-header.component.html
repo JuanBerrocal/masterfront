@@ -1,0 +1,11 @@
+<div class="public-header-title">
+    <img src="./assets/logo_1.png" width="100px">
+    Aplicacion de layout completo
+</div>
+<div class="public-header-subtitle" *ngIf = "isLogged()">
+    <span >Usuario: {{getUsername()}} </span>
+    <span>&nbsp;&nbsp;</span>
+    <button (click)="logout()">Salir</button>
+</div>
+
+

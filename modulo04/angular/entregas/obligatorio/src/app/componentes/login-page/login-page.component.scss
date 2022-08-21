@@ -1,0 +1,45 @@
+
+.login-page {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: large;
+  padding: 20px 20px;
+}
+
+.login-page-form {
+  width: 25%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.login-page-form-line {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding: 10px 10px;
+}
+
+.login-page-form-line label {
+  width: 30%;
+}
+
+.login-page-form-line input {
+  width: 75%;
+}
+
+.login-page-form-line button {
+  width: 30%;
+}
+
+.login-page-error-message {
+  width: 75%;
+  background-color: pink;
+  color: red;
+  padding: 10px 10px 10px 10px;
+  font-size: medium;
+}

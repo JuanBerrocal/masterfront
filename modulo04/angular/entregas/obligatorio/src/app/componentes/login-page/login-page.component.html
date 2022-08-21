@@ -1,0 +1,24 @@
+
+<div class="login-page">
+<form class="login-page-form">
+  <div class="login-page-form-line">
+    <h1>Login</h1>
+  </div>
+  <div class="login-page-form-line">
+    <label>User </label>
+    <input name="name" type="text" [(ngModel)] = "user.name" required #name="ngModel"/>
+  </div>
+  <div class="login-page-form-line">
+    <label>Password </label>
+    <input name="password" type="password"  [(ngModel)] = "user.password" required #password="ngModel"/>
+  </div>
+  <div class="login-page-form-line">
+    <div class="login-page-error-message" *ngIf = "password.invalid && password.touched">El password es obligatorio</div>
+    <div class="login-page-error-message" *ngIf = "name.invalid && name.touched">El campo usuario es obligatorio</div>
+    <div class="login-page-error-message" *ngIf = "error">{{error}}</div>
+  </div>
+  <div class="login-page-form-line">
+    <button (click)="login()">Submit</button>
+  </div>
+</form>
+</div>

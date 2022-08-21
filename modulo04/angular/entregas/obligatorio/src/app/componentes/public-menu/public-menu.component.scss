@@ -1,0 +1,5 @@
+.selected {background-color: cyan}
+.app-public-menu {display: flex;flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start; padding: 20px, 20px, 20px, 20px;}
+.app-public-menu-choice {padding: 10px 10px 10px 10px}
+.app-public-menu-choice a {text-decoration: none;}
+.app-public-menu-choice a:hover {background-color: lightcyan;}

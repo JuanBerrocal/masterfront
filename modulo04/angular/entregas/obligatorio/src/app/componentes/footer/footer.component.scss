@@ -1,0 +1,12 @@
+
+$site_color: darkcyan;
+
+.footer {
+  display:flex;
+  align-content: center;
+  text-align:center;
+  vertical-align: middle;
+  font-size: medium;
+  color: white;
+  background-color: $site_color;
+  }
