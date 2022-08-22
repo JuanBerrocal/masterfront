@@ -1,20 +1,25 @@
 
+:host {
+  width: 100%;
+}
+
 .login-page {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row nowrap;
   justify-content: center;
   font-size: large;
-  padding: 20px 20px;
 }
 
 .login-page-form {
-  width: 25%;
   display: flex;
+  max-width: 400px;
+  width: 40%;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 10px 10px;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
 .login-page-form-line {
@@ -25,19 +30,19 @@
 }
 
 .login-page-form-line label {
-  width: 30%;
+  text-align: left;
 }
 
 .login-page-form-line input {
-  width: 75%;
+  text-align: left;
 }
 
 .login-page-form-line button {
-  width: 30%;
+  width: 80px;
+  text-align: center;
 }
 
 .login-page-error-message {
-  width: 75%;
   background-color: pink;
   color: red;
   padding: 10px 10px 10px 10px;
