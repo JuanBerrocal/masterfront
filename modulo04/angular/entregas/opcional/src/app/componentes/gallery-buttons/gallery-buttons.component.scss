@@ -1,0 +1,30 @@
+.app-gallery-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  gap: 5px;
+}
+
+.app-gallery-common-buttons {
+  color: white;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 10px 10px;
+}
+
+.app-gallery-select-buttons {
+  background-color: green;
+}
+
+.app-gallery-select-buttons[disabled] {
+  background-color: lightgray;
+}
+
+.app-gallery-size-buttons {
+  background-color: blue;
+}
+
+.app-gallery-play-buttons {
+  background-color: red;
+}

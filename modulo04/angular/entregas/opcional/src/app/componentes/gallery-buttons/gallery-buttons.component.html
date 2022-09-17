@@ -1,0 +1,10 @@
+<div class = "app-gallery-buttons">
+  <button class = "app-gallery-common-buttons app-gallery-select-buttons" [disabled] = "prevBtnDisabled"  (click) = "setPrevImage()">Anterior</button>
+  <button class = "app-gallery-common-buttons app-gallery-select-buttons" [disabled] = "nextBtnDisabled" (click) = "setNextImage()">Siguiente</button>
+  <button class = "app-gallery-common-buttons app-gallery-size-buttons" (click) = "gallery!.enlarge()">Aumentar</button>
+  <button class = "app-gallery-common-buttons app-gallery-size-buttons" (click) = "gallery!.diminish()">Disminuir</button>
+  <button *ngIf="!isPlaying" class = "app-gallery-common-buttons app-gallery-play-buttons" (click) = "play()">Play</button>
+  <button *ngIf="isPlaying" class = "app-gallery-common-buttons app-gallery-play-buttons" (click) = "stop()">Stop</button>
+
+</div>
+

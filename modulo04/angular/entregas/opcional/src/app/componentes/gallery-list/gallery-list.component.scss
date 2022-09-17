@@ -1,0 +1,29 @@
+.app-gallery-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.app-gallery-list-mini-image {
+  width: 50px;
+  padding: 5px;
+}
+
+.app-gallery-list-mini-image-selected {
+  border: solid 3px red;
+}
+
+.app-gallery-list-mini-image img {
+  width: 50px;
+  height: 40px;
+}
+
+.app-gallery-list-common-buttons {
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 10px 10px;
+  height: 40px;
+}

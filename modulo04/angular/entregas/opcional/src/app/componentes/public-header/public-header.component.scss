@@ -1,0 +1,28 @@
+
+
+$themeHeaderBackground: darkcyan;
+$themeHeaderColor: white;
+$themeHeaderTitleFontSize: xx-large;
+$themeHeaderSubtitleFontSize: medium;
+
+
+  .public-header-title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    line-height: 100px;
+    font-size:  $themeHeaderTitleFontSize;
+    color: $themeHeaderColor;
+    background-color: $themeHeaderBackground;
+  }
+
+  .public-header-subtitle {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size:  $themeHeaderSubtitleFontSize;
+    color: $themeHeaderColor;
+    background-color: $themeHeaderBackground;
+    padding: 5px 5px;
+  }

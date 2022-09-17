@@ -1,0 +1,8 @@
+<div class="app-gallery-list">
+  <button class="app-gallery-list-common-buttons" (click)="decStart()">Anterior</button>
+  <div class="app-gallery-list-mini-image"
+    *ngFor="let image of gallery!.imageList.getAll() | slice:start:start+3; let i = index">
+      <img [src]=image.src (click) = "onSelect(i + start)" [ngClass]="(gallery!.getCurrentIndex() === (i+start)) ? 'app-gallery-list-mini-image-selected' : ''">
+  </div>
+  <button class="app-gallery-list-common-buttons" (click)="incStart()">Siguiente</button>
+</div>
