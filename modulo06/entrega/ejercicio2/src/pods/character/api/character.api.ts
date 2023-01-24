@@ -3,19 +3,18 @@ import { Character } from './character.api-model';
 import { Lookup } from 'common/models';
 //import { mockCities, mockHotelCollection } from './hotel.mock-data';
 
+let url = '/api/characters';
 
 export const getCharacter = async (id: string): Promise<Character> => {
-  return Axios.get('https://rickandmortyapi.com/api/character/' + `${id}`).then(({data}) => data);
+  //return Axios.get('https://rickandmortyapi.com/api/character/' + `${id}`).then(({data}) => data);
+  return Axios.get(`${url}/${id}`).then((response) => response.data);
 };
-
-/*export const getHotel = async (id: string): Promise<Hotel> => {
-  return mockHotelCollection.find((h) => h.id === id);
-};
-
-export const getCities = async (): Promise<Lookup[]> => {
-  return mockCities;
-};*/
 
 export const saveCharacter = async (character: Character): Promise<boolean> => {
-  return true;
+  if (character.id) {
+    return Axios.put(`${url}/${character.id}`, character).then(() => true);
+  }
+  else {
+    return Axios.post(`${url}`, character).then(() => true);
+  }
 };
