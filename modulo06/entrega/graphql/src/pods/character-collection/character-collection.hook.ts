@@ -6,7 +6,7 @@ import { mapToCollection } from 'common/mappers';
 
 export const useCharacterCollection = () => {
   const [characterResponse, setCharacterResponse] = React.useState<CharacterResponseVm>(
-    {info: {count: 0, pages: 0, next: '', prev: ''}, results: []}
+    {info: {count: 0, pages: 0 }, results: []}
   );
 
   const loadCharacterResponse = (target: string, page: number) => {

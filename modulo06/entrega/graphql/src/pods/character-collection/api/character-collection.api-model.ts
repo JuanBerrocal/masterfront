@@ -23,8 +23,6 @@ export interface CharacterResponseApi {
   info: {
     count: number;
     pages: number;
-    next: string;
-    prev: string;
   };
   results: CharacterEntityApi[];
 }

@@ -1,3 +1,4 @@
+
 export interface Character {
     id: number;
     name: string;
@@ -5,7 +6,6 @@ export interface Character {
     species: string;
     gender: string;
     image: string;
-    episode: string[];
     created: Date;
 }
 
@@ -16,6 +16,5 @@ export const createEmptyCharacter = (): Character => ({
   species: '',
   gender: '',
   image: '',
-  episode: [],
   created: null,
 });

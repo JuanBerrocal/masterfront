@@ -34,7 +34,6 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
           <TextFieldComponent name="species" label="Species" />
           <TextFieldComponent name="gender" label="Gender" />
           <TextFieldComponent name="image" label="Image" />
-          <TextFieldComponent name="episode" label="Episode" />
           <TextFieldComponent name="created" label="Created" />
 
           <Button type="submit" variant="contained" color="primary">
