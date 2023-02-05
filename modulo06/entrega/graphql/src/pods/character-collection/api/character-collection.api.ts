@@ -2,14 +2,9 @@ import Axios from 'axios';
 import {gql} from 'graphql-request';
 import { CharacterEntityApi, CharacterResponseApi } from './character-collection.api-model';
 import {graphQLClient} from './../../../core/api';
-//import { mockHotelCollection } from './hotel-collection.mock-data';
 
-//let characterCollectionCollection = [...mockHotelCollection];
 let characterCollection = [];
 
-/*export const getCharacterResponse = async (target: string, page:number): Promise<CharacterResponseApi> => {
-  return Axios.get(`https://rickandmortyapi.com/api/character/?name=${target}&page=${page}`).then(({data}) => data);
-};*/
 
 interface GetCharacterCollectionResponse  {
       characters: {

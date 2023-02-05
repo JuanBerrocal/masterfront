@@ -12,10 +12,6 @@ export const CharacterContainer: React.FunctionComponent = (props) => {
   const { id } = useParams();
   const history = useHistory();
 
-  /*const handleLoadCityCollection = async () => {
-    const apiCities = await api.getCities();
-    setCities(apiCities);
-  };*/
 
   const handleLoadCharacter = async () => {
     const apiCharacter = await api.getCharacter(id);
@@ -26,7 +22,6 @@ export const CharacterContainer: React.FunctionComponent = (props) => {
     if (id) {
       handleLoadCharacter();
     }
-    //handleLoadCityCollection();
   }, []);
 
   const handleSave = async (character: Character) => {
